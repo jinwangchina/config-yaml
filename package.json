@@ -1,5 +1,5 @@
 {
-  "name": "@easy-webpack/config-yaml",
+  "name": "jinwangchina-config-yaml",
   "description": "Easy Webpack configuration function for yaml",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -15,7 +15,6 @@
   },
   "keywords": [
     "yaml",
-    "yaml-loader",
     "webpack",
     "easy",
     "configurator",
