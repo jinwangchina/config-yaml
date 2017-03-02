@@ -15,6 +15,7 @@
   },
   "keywords": [
     "yaml",
+    "yaml-loader",
     "webpack",
     "easy",
     "configurator",
