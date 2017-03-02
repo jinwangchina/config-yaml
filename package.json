@@ -1,0 +1,62 @@
+{
+  "name": "@easy-webpack/config-yaml",
+  "description": "Easy Webpack configuration function for yaml",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "TS_NODE_FAST=true TS_NODE_NO_PROJECT=true ava",
+    "build": "rimraf dist && tsc -p .",
+    "semantic-release": "npm run build && semantic-release pre && npm publish --access=public && semantic-release post",
+    "postpublish": "greenkeeper-postpublish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jinwangchina/config-yaml.git"
+  },
+  "keywords": [
+    "yaml",
+    "webpack",
+    "easy",
+    "configurator",
+    "configuration",
+    "config",
+    "simple"
+  ],
+  "author": "Jin Wang <jin.wang.china@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jinwangchina/config-yaml/issues"
+  },
+  "homepage": "https://github.com/jinwangchina/config-yaml#readme",
+  "devDependencies": {
+    "@types/debug": "0.0.29",
+    "@types/lodash": "^4.14.38",
+    "@types/node": "^6.0.46",
+    "@types/source-map": "^0.1.29",
+    "@types/webpack": "^1.12.35",
+    "ava": "^0.16.0",
+    "greenkeeper-postpublish": "^1.0.1",
+    "rimraf": "^2.5.4",
+    "semantic-release": "^4.3.5",
+    "ts-node": "^1.6.1",
+    "tslint": "^3.15.1",
+    "tslint-config-standard": "^1.5.0",
+    "typescript": "^2.0.6"
+  },
+  "dependencies": {
+    "json-loader": "^0.5.4",
+    "yaml-loader": "^0.4.0"
+  },
+  "peerDependencies": {
+    "@easy-webpack/core": "*"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.{ts,js}"
+    ],
+    "tap": false,
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}
